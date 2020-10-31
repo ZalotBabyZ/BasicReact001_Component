@@ -9,8 +9,8 @@ class Customer extends Component {
     render() {
         const tBody = { border: "1px solid #173f5f", backgroundColor: this.state.bgColor}
         return (
-            <tr onMouseLeave={() => this.setState({ bgColor: this.props.color })} onMouseOver={() => this.setState({ bgColor: "#173f5f" })}>
-            {/* <tr onMouseLeave={() => this.setState({ bgColor: this.props.colorDiff })} onMouseOver={() => this.setState({ bgColor: "#173f5f" })}> */}
+            // <tr onMouseLeave={() => this.setState({ bgColor: this.props.color })} onMouseOver={() => this.setState({ bgColor: "#173f5f" })}>
+            <tr onMouseLeave={() => this.setState({ bgColor: this.props.colorDiff })} onMouseOver={() => this.setState({ bgColor: "#173f5f" })}>
                 <td style={tBody}>{this.props.name}</td>
                 <td style={tBody}>{this.props.email}</td>
                 <td style={{ ...tBody, textAlign: "center" }}>{this.props.age}</td>

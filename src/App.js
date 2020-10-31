@@ -542,12 +542,12 @@ class App extends Component {
               customer => customer.name.slice(0, 1) === "A"
             ).map(
               (customer, idx) => {
-                const bgColor = (idx % 3 === 0) ? "#f6d55c"
-                  : (idx % 3 === 1) ? "#3caea3"
-                    : "#ed553b"
+                // const bgColor = (idx % 3 === 0) ? "#f6d55c"
+                //   : (idx % 3 === 1) ? "#3caea3"
+                //     : "#ed553b"
               
-                return <Customer key={idx} color={bgColor} name={customer.name} age={customer.age} email={customer.email} setName={this.setName} />
-                // return <Customer key={idx} colorDiff={`rgb(${246 - 20 * idx},213,92)`} color="#f6d55c" name={customer.name} age={customer.age} email={customer.email} setName={this.setName} />
+                // return <Customer key={idx} color={bgColor} name={customer.name} age={customer.age} email={customer.email} setName={this.setName} />
+                return <Customer key={idx} colorDiff={`rgb(${246 - 20 * idx},213,92)`} color="#f6d55c" name={customer.name} age={customer.age} email={customer.email} setName={this.setName} />
               }
             )
             }
